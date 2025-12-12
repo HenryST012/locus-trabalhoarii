@@ -1,2 +1,2 @@
 # locus-trabalhoarii
-projeto estatico pra a atividade de interface do usuario
+projeto estatico de um projeto django que ja existe pra a atividade de interface do usuario
