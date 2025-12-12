@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="h-full bg-gray-50">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar - Locus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="h-full flex flex-col antialiased text-slate-800">
+
+    <nav class="fixed w-full z-50 top-0 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-8">
+                    <a href="index.html" class="flex-shrink-0 text-2xl font-bold text-[#2F7E32]">LOCUS</a>
+                    <div class="hidden md:flex space-x-1">
+                        <a href="index.html" class="px-4 py-2 rounded-full text-sm font-medium text-gray-700 hover:text-[#2F7E32] hover:bg-green-50">Dashboard</a>
+                        <a href="explorar.html" class="px-4 py-2 rounded-full text-sm font-medium text-[#2F7E32] bg-green-50">Ideias</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-24 pb-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            
+            <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 mb-8 flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden">
+                <div class="relative z-10">
+                    <h1 class="text-3xl font-bold text-gray-900 tracking-tight">Banco de Ideias</h1>
+                    <p class="text-gray-500 mt-2">Explore as inovações propostas pela comunidade.</p>
+                </div>
+                <div class="relative z-10 bg-gray-100 p-1.5 rounded-full flex items-center">
+                    <span class="px-6 py-2 rounded-full text-sm font-bold bg-white text-[#2F7E32] shadow-sm">Recentes</span>
+                    <span class="px-6 py-2 rounded-full text-sm font-bold text-gray-500 cursor-not-allowed">Populares</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group flex flex-col items-center justify-center h-full min-h-[250px] border-2 border-dashed border-gray-300 rounded-3xl bg-gray-50 cursor-not-allowed">
+                    <div class="w-16 h-16 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-400 mb-4 shadow-sm">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+                    </div>
+                    <span class="font-bold text-gray-500">Nova Ideia (Demo)</span>
+                </div>
+
+                <div class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col overflow-hidden group cursor-pointer" onclick="window.location='detalhe.html'">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex items-center gap-2">
+                                <div class="h-8 w-8 rounded-full bg-green-50 border border-green-100 flex items-center justify-center text-xs font-bold text-[#2F7E32]">A</div>
+                                <span class="text-xs text-gray-500 font-medium">Ana Silva</span>
+                            </div>
+                            <div class="flex items-center gap-1 bg-green-50 text-[#2F7E32] px-2.5 py-1 rounded-lg text-xs font-bold border border-green-100">15 pts</div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight group-hover:text-[#2F7E32] transition-colors">Clube de Robótica Aberto</h3>
+                        <p class="text-sm text-gray-500 line-clamp-3 mb-4 flex-grow">Gostaria de propor a abertura do laboratório aos sábados.</p>
+                        <div class="pt-4 border-t border-gray-50 flex items-center justify-between text-xs text-gray-400">
+                            <span>2 dias atrás</span>
+                            <span class="flex items-center gap-1 group-hover:text-[#2F7E32] font-bold transition-colors">Ver detalhes &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col overflow-hidden group cursor-pointer" onclick="window.location='detalhe.html'">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="flex items-center gap-2">
+                                <div class="h-8 w-8 rounded-full bg-green-50 border border-green-100 flex items-center justify-center text-xs font-bold text-[#2F7E32]">C</div>
+                                <span class="text-xs text-gray-500 font-medium">Carlos E.</span>
+                            </div>
+                            <div class="flex items-center gap-1 bg-green-50 text-[#2F7E32] px-2.5 py-1 rounded-lg text-xs font-bold border border-green-100">42 pts</div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 leading-tight group-hover:text-[#2F7E32] transition-colors">Wi-Fi no Refeitório</h3>
+                        <p class="text-sm text-gray-500 line-clamp-3 mb-4 flex-grow">O sinal no refeitório é muito fraco. Poderíamos instalar um repetidor.</p>
+                        <div class="pt-4 border-t border-gray-50 flex items-center justify-between text-xs text-gray-400">
+                            <span>1 semana atrás</span>
+                            <span class="flex items-center gap-1 group-hover:text-[#2F7E32] font-bold transition-colors">Ver detalhes &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
